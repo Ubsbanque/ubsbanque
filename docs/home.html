@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Welcome, <span id="usernameDisplay"></span>!</h1>
+    <a href="index.html">Logout</a>
+    <a href="comptes.html">Access Accounts</a>
+    <script>
+        // Affiche le nom d'utilisateur
+        document.getElementById('usernameDisplay').textContent = localStorage.getItem('username');
+    </script>
+</body>
+</html>
